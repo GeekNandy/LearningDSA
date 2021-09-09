@@ -1,0 +1,24 @@
+import java.io.*; // for handling input/output
+import java.util.*; // contains Collections framework
+
+ class Main {
+ 	public static void main (String[] args) {
+                       // Your code here
+		int arr[] = {1,1,1,0,0,0,1,0};
+ 		int n = arr.length;
+ 		int count = 0;
+ 		for (int i =0;i<n;i++){
+if(arr[i]==0){
+				count++;
+			}
+ 		}
+ 		for(int i = 0;i<count;i++){
+ 			arr[i]=0;
+ 		}for(int i = count;i<n;i++){
+ 			arr[i]=1;
+ 		}
+ 		for (int element:arr){
+ 			System.out.print(element);
+ 		}
+ 	}
+ }
